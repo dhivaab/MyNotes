@@ -35,3 +35,8 @@ devops process
 
 SSL how it works
 OAuth 
+Flink
+Orchestration vs choreography
+yarn
+100 million documents per day 2MB
+amplify 
