@@ -4,3 +4,5 @@
 2. Git
 3. VMWare Horizon client
 4. Post Man
+5. Slack
+6. Python

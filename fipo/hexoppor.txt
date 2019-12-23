@@ -1,0 +1,41 @@
+Java or .Net
+.net
+	.net core
+	asp.net
+	mvc
+	entity framework
+	microservices 
+	
+java
+	core java
+	hibernate
+	rest api
+	oops concepts
+	rest security
+	spring boot 
+
+5+ years of above.  Senior Developer/Tech Lead 
+
+design principles/design patterns
+SOLID Principes
+
+
+AWS
+
+AWS
+Azure
+
+application arcitecture
+
+
+communication
+
+volume
+concurrency
+security 
+
+
+
+
+
+
