@@ -52,3 +52,25 @@ Auto Scaling
 37. custom permission set with session duration as 6 hours
 38. for billing beneifts instanceid should be in same az
 39. audit purpose - cross account role
+
+
+1. access the db from ec2 instance - using credentials with the authentication token. 
+2. kinesis firehouse -> redshift, s3 ,elastic search and splunk 
+3. migratation of application from on prem to cloud no need to change the ip address
+4.  - create Route Origin aurhotization(ROA)
+5.  increase write capacity of db -> raid 0 and increase ec2 instance type.
+6.  ad -> simple ad connector and rbac -role based access
+7.  DB monitoring -> enhanced monitoring in rds
+8.  individual ip used 111.2.3.3/32
+9.  s3 single signon -> setup federation proxy or an idenitty provider
+10. redshift define query qeues and routing -> use worload management in parameter group
+11. posis complaint - efs
+12. ecs -> database credentials - keep in system management store.
+13. without elb how can you achieve high availablity and fault tolerence -> script to verify the instnance, assign elastic ip address to the instance. 
+14. signed urls - rtmp distribution, restrict invidival files, download your application, users doesnt support cookies
+15. signed cookies - no rtmp distribution, access to multiple restrict files, all hls files, dont want to change your current url
+16. instance store snapshot - still use the volume
+17. which instance stop first in asg -> asg with oldest launch configuration.
+18. auroroa read and write for lower prirority cqueries - create custom endpiont 
+19. dynamo db performance increase -> reduce the number of partition keys
+20. shield - ddos attack
