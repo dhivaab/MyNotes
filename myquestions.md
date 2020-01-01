@@ -73,3 +73,39 @@ and enable the support for SNI
     4.  stopped - no cost
     5.  shutting-down - no cost
     6.  terminated - cost 
+58. vault policy lock for legal and compliance requirements - retain archive for 1 year 
+    and no delete is applicable here. 
+59. change the instance type from one to another in auto scaling group. - create a new launch configuration
+    with the new instance type and update the ASG. 
+    Note - you cant modify the launch configuration after you create it. 
+60. if your asg instance is not launching new instance when your high memory usage exceeds - install cloud watch monitoring
+    scripts in the instance. send custom metrics to cloudwatch which will trigger auto scaling group to scale up. 
+    detailed monitoring is not applicable here since it is not related to "memory"
+70. costing - running ec2 and ebs attached to ec2. 
+71. automate the recurring tasks - coordinate multiple aws services into serverless workflows - step functions 
+72. redshift spectrum -> run sql queries againsts exa bytes of unstructured data in amazon s3. no loading or transformation is reqruired. 
+73. Name any resources - ARN 
+74. ELB has subnet for each AZ in region/VPC . 6 instances for elb, public,private and multiple fault tolerance. 
+75. Dynamo DB - increase the thoughput and decrease based on traffic patterns -> using auto scaling.
+76. remember to provide the best option for the fault tolerance 6 instances each 2 in 3 AZ. 
+77. when no duplicated -> ksiness and duplicate no sqs message
+78. order processing - sws 
+79. RDS regular metrics - CPU utilization 
+80. RDS enhanced metrics -> RDS child process, RDS process, OS process
+81. Where SSL/TLS certicate store -> AWS certificate manager, IAM certificate store
+82. bucket name -> bucketname.s3-region.amazonaws.com 
+83. Tracing and analzye user requests  - xray
+84. spot instance are terminated if the instance gets interuppted by ec2 for capacity requirements
+    But stop and hibernate options are available for persistent spot requets and spot fleets with maintain option enabled. 
+85. public s3 files -> upload make sure and configure s3 bucket policy for public read 
+86. ldap on on premise service need to integrate with AWS VPC using IAM. but it is not comptabile with SAML. 
+    - Develop an on premise custom identity broker application and use STS credentials
+87. Data store
+    1.  temp storage - instance store 
+    2.  multi instance stoage - EFS
+    3.  high durable storage - S3, EFS
+    4.  static data - S3, EFS
+    5.  low latency data - EBS
+88. Connection Draining -> if backend instasnce fails the LB should not send any requets to unhealthy instances but should allow existing request to complte. 
+89. Sticky session - session mainteance in LB
+90. Cross Zone load balacing -> distribute request evenly across the registered instances in all enabled AZ. 
