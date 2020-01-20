@@ -74,3 +74,13 @@ Auto Scaling
 18. auroroa read and write for lower prirority cqueries - create custom endpiont 
 19. dynamo db performance increase -> reduce the number of partition keys
 20. shield - ddos attack
+21. Infrequent access - put in s3 and life cycle to 0 days to glaicer. 
+22. If you are not able to access to EC2 and get error 
+     "Server refused our key"
+     - the SSH private key that you are using has the file permission of 0777
+23. Snapshots are automatically encrypted and all data moving between the volume and instance are encrypted. 
+24. However, you noticed that one of the Availability Zones is not receiving any traffic. - The AZ is not added to load balancer which is not receiving any traffic. 
+25. if primary database instance fails what happens to aurora during failover -> first attempt to create a new one in same AZ if not then go for next AZ. 
+26. Attempting to log in as the administrator more than twice with the wrong password zeroizes your HSM appliance. When an HSM is zeroized, all keys, certificates, and other data on the HSM is destroyed.
+27. atuomate the ec2 instance environment - aws ec2-describe-instances
+28. you need to provide the ability to fully restore the data stored in their EBS volumes by using EBS snapshots.   - maintains single snapshot - (low cost) 
